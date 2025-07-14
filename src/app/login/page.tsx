@@ -1,8 +1,8 @@
 "use client"
 import Link from "next/link"
 import React from "react"
-import { useRouter } from "next/navigation"
-import axios from "axios"
+import { useRouter } from "next/router"
+import { Axios } from "axios"
 export default function loginPage(){
     const [user,setUser] = React.useState({
         email:"",
