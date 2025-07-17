@@ -23,7 +23,7 @@ export default function loginPage(){
            toast.success("Login success")
            //username fetch from api response
            const username = response.data.user?.username || response.data.username;
-           router.push(`/profile`)
+           router.push('/profile')
         } catch (error:any) {
             console.log("login failed",error.message);
             toast.error(error.message);
